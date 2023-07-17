@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>설문조사-search</title>
+    <script
+      src="https://kit.fontawesome.com/8aa8789802.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style\survey_search.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2 class="search-emotion" id="emotion">
+          나는 화날 때, 이런 노래를 듣는다
+          <!-- JS로 하기 -->
+          <!--'{{ emotion}}'-->
+        </h2>
+      </header>
+
+      <div class="search">
+        <!-- 주소 우리꺼로 바꾸기 -->
+        <form
+          action="http://mood-test-mood.kro.kr/webtest/survey_search_test.php"
+          method="POST"
+        >
+          <input
+            class="search-bar"
+            type="text"
+            name="search_track"
+            placeholder="노래나 가수를 입력하세요"
+          />
+          <!-- <div class="search-glass"> -->
+          <!-- <input
+            type="button"
+            onclick="getInputValue();"
+            class="search-input-btn"
+            value="검색"
+          /> -->
+          <button class="search-btn" type="submit"></button>
+
+          <!-- </div> -->
+        </form>
+      </div>
+
+      <ul class="playlist">
+        <li class="playlist__song">
+          <img
+            class="albumcover"
+            src="https://image.bugsm.co.kr/album/images/original/204456/20445654.jpg?version=undefined"
+            width="50%"
+          />
+          <div class="playlist__info">
+            <h5>track:</h5>
+            <h6>name:</h6>
+          </div>
+        </li>
+
+        <li class="playlist__song">
+          <img
+            class="albumcover"
+            src="https://image.bugsm.co.kr/album/images/original/40400/4040011.jpg?version=undefined"
+            width="50%"
+          />
+          <div class="playlist__cover"></div>
+          <div class="playlist__info">
+            <h5>ASAP</h5>
+            <h6>STAYC (스테이씨)</h6>
+          </div>
+        </li>
+
+        <li class="playlist__song">
+          <img
+            class="albumcover"
+            src="https://image.bugsm.co.kr/album/images/original/154325/15432584.jpg?version=undefined"
+            width="50%"
+          />
+          <div class="playlist__cover"></div>
+          <div class="playlist__info">
+            <h5>Dun Dun Dance</h5>
+            <h6>오마이걸</h6>
+          </div>
+        </li>
+      </ul>
+
+      <button class="prev-btn"></button>
+      <button class="next-btn"></button>
+      <!-- <div class="btn-next">
+        <i class="fa-solid fa-arrow-right fa-2x"></i>
+      </div> -->
+    </div>
+
+    <script type="text/javascript" src="survey_js\survey_search.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

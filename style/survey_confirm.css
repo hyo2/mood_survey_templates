@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  /* background-color: white; */
+  /* width: 600px; */
+  padding: 50px 30px 15px 30px;
+  /* box-shadow: 0px 3px 15px 7px #979797; */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  margin-top: 0px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  opacity: 0.8;
+}
+
+.search {
+  position: relative;
+  width: 700px;
+}
+
+.search-bar {
+  padding-left: 25px;
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+  border-radius: 35px;
+  border: 2px;
+}
+
+.playlist__song {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.playlist__info {
+  margin-top: 10px;
+  display: flex;
+  /* display: block; */
+  align-items: center;
+  margin-left: 0px;
+  width: 600px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+.song_name {
+  /* margin-top: 25px; */
+  margin-left: 45px;
+  font-size: 22px;
+  font-weight: 700;
+  /* margin-bottom: 5px; */
+}
+
+.artist_name {
+  /* margin-top: 5px; */
+  margin-left: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.end-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f67280;
+  color: white;
+  width: 100px;
+  height: 45px;
+  /* padding: 0px 10px 0px 10px; */
+  border-radius: 35px;
+}
